@@ -75,6 +75,7 @@ const ProjectCard = ({
               font-poppins tracking-[1px]">
               {description}
             </p>
+
             <button
               className="live-demo flex justify-between 
               sm:text-[16px] text-[14px] text-timberWolf 
@@ -123,7 +124,8 @@ const Projects = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
-          className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
+          className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
+          style={{ textAlign: 'justify' }}>
           These projects demonstrate my expertise with practical examples of
           some of my work, including brief descriptions and links to code
           repositories and live demos. They showcase my ability to tackle

@@ -1,32 +1,32 @@
 import {
   frontend,
   backend,
-  ux,
+  af,
   prototyping,
   javascript,
-  typescript,
+  python,
   html,
   css,
   reactjs,
-  redux,
+  jquery,
   tailwind,
-  nodejs,
   git,
-  figma,
-  docker,
-  postgresql,
-  rubyrails,
-  graphql,
-  komikult,
-  leaderboard,
-  math,
-  movie,
+  c,
+  twodcar,
+  twodshoot,
+  portfolio,
+  ipl,
   nyeusi,
   space,
-  coverhunt,
-  dcc,
-  kelhel,
-  microverse,
+  intern,
+  fullstack,
+  develop,
+  soft,
+  database,
+  aws,
+  ai,
+  azure,
+  mongo
 } from '../assets';
 
 export const navLinks = [
@@ -54,8 +54,8 @@ const services = [
     icon: backend,
   },
   {
-    title: 'UI/UX Design',
-    icon: ux,
+    title: 'Artificial Intelligence',
+    icon: af,
   },
   {
     title: 'Software Prototyping',
@@ -64,6 +64,14 @@ const services = [
 ];
 
 const technologies = [
+  {
+    name: 'Artificial intelligence',
+    icon: ai,
+  },
+  {
+    name: 'Python',
+    icon: python,
+  },
   {
     name: 'HTML 5',
     icon: html,
@@ -77,194 +85,162 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: 'TypeScript',
-    icon: typescript,
+    name: 'git',
+    icon: git,
   },
   {
-    name: 'React JS',
-    icon: reactjs,
+    name: 'JQuery',
+    icon: jquery,
   },
   {
-    name: 'Redux Toolkit',
-    icon: redux,
+    name: 'MySQl',
+    icon: database,
+  },
+  {
+    name: 'Mongo DB',
+    icon: mongo,
+  },
+  {
+    name: 'AWS',
+    icon: aws,
+  },
+  {
+    name: 'Azure',
+    icon: azure,
   },
   {
     name: 'Tailwind CSS',
     icon: tailwind,
   },
   {
-    name: 'Node JS',
-    icon: nodejs,
-  },
+    name: 'C/C++',
+    icon: c,
+  },  
   {
-    name: 'Rails',
-    icon: rubyrails,
-  },
-  {
-    name: 'graphql',
-    icon: graphql,
-  },
-  {
-    name: 'postgresql',
-    icon: postgresql,
-  },
-  {
-    name: 'git',
-    icon: git,
-  },
-  {
-    name: 'figma',
-    icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
+    name: 'React JS',
+    icon: reactjs,
   },
 ];
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
-    icon: coverhunt,
+    title: 'Data Engineer',
+    company_name: 'Itronix Solutions',
+    icon: intern,
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
-  },
-  {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
-    icon: microverse,
-    iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: 'Jan 2019 - Dec 2019',
   },
   {
     title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
-    icon: kelhel,
+    company_name: 'Winsurtech Solutions',
+    icon: soft,
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
+    date: 'Jan 2022 - Feb 2023',
+  },
+  {
+    title: 'Software Engineer',
+    company_name: 'Winsurtech Solutions',
+    icon: develop,
+    iconBg: '#333333',
+    date: 'FEB 2023 - Nov 2023',
   },
   {
     title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
-    icon: dcc,
+    company_name: 'Winsurtech Solutions',
+    icon: fullstack,
     iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'Nov 2023 - Present',
   },
 ];
 
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: '2D Car Game',
+    description: '2D Car Game Using Ursina Game Engine, Ursina is a Python Based Game Engine.',
     tags: [
       {
-        name: 'react',
+        name: 'python',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'ursina',
         color: 'green-text-gradient',
       },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
     ],
-    image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    image: twodcar,
+    repo: 'https://github.com/thecrood/2D-Car-Game-Using-Ursina-Game-Engine',
+    demo: '#',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: '2D shooting Game',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      '2D shooting Game Using Ursina Game Engine, Ursina is a Python Based Game Engine.',
     tags: [
       {
-        name: 'react',
+        name: 'python',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'Ursina',
         color: 'green-text-gradient',
-      },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient',
-      },
+      },,
     ],
-    image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    image: twodshoot,
+    repo: 'https://github.com/thecrood/2D-shooting-Game-Using-Ursina-Game-Engine',
+    demo: '#',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
+    name: 'portfolio',
+    description: 'Portfolio Web App For Software Developer.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'reactjs',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'vite',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'tailwindcss',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'javascript',
         color: 'pink-text-gradient',
       },
     ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    image: portfolio,
+    repo: 'https://github.com/thecrood/portfolio',
+    demo: '#',
   },
   {
     id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
+    name: 'EDA of IPL Data',
+    description: `Exploratory-Data-Analysis-of-IPL-Matches-9years`,
     tags: [
       {
-        name: 'nextjs',
+        name: 'python',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'Data Analysis',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'Pandas',
+        color: 'pink-text-gradient',
+      },{
+        name: 'Seaborn',
         color: 'pink-text-gradient',
       },
     ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
-  },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
-    description:
-      'This is a demo concert website for a music festival called Nyeusi.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
+    image: ipl,
+    repo: 'https://github.com/thecrood/Exploratory-Data-Analysis-of-IPL-Matches-9years',
+    demo: '#',
   },
 ];
 

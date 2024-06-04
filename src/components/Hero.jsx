@@ -3,20 +3,35 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { shaq, bwmap, worldmap } from '../assets';
+import { bwmap, worldmap } from '../assets';
 
 const values = ['Software Engineer', 'Python Developer', 'Data Engineer'];
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentWord, setCurrentWord] = useState('');
+  const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
+      setCurrentLetterIndex(0);
+      setCurrentWord('');
       setCurrentIndex((prevIndex) => (prevIndex + 1) % values.length);
-    }, 2000); // 5 seconds
+    }, 5000); // 5 seconds
 
     return () => clearInterval(intervalId); // Cleanup interval on component unmount
   }, []);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      if (currentLetterIndex < values[currentIndex].length) {
+        setCurrentWord((prevWord) => prevWord + values[currentIndex][currentLetterIndex]);
+        setCurrentLetterIndex((prevIndex) => prevIndex + 1);
+      }
+    }, 100); // Adjust speed as needed
+
+    return () => clearTimeout(timeoutId); // Cleanup timeout on component unmount or next iteration
+  }, [currentIndex, currentLetterIndex]);
 
   return (
     <>
@@ -62,9 +77,9 @@ const Hero = () => {
                 Rohit
               </span>
             </h1>
-            <p className={`${styles.heroSubText} mt-2 text-teal-400`}>
+            <p className={`${styles.heroSubText} mt-2 #1f1f1f`}>
             <br className="sm:block hidden" />
-              {values[currentIndex]}
+              {currentWord}
             </p>
           </div>
           <div
@@ -101,15 +116,15 @@ const Hero = () => {
         </div>
 
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
-        <div>
+        {/* <div>
           <img
             className="absolute bottom-0 ml-[50vw] 
             lg:ml-[75vw] md:ml-[60vw] xmd:ml-[60vw] 2xl:ml-[83vw]
             sm:h-[90vh] md:h-[70vh] xl:h-[80vh]"
-            src={shaq}
-            alt="shaquille"
+            src={}
+            alt=""
           />
-        </div>
+        </div> */}
       </section>
     </>
   );

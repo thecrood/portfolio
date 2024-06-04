@@ -36,13 +36,9 @@ const About = () => {
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-        sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea
-        quaerat alias accusamus voluptas autem! Alias odit voluptates in totam
-        vitae dignissimos minus eaque culpa unde tempore dolore aperiam
-        obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde
-        veniam dolorum ipsum doloribus.
+        className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
+        style={{ textAlign: 'justify' }}>
+        I am a proficient Software Engineer and Python Developer with expertise in Python, AWS, Azure, SQL, MongoDB Django, Flask, REST APIs, FastAPI, AI, Data Analytics, Deep Learning and Tkinter. I excel in creating scalable software solutions and robust data infrastructures, leveraging cloud platforms like AWS and Azure to boost application performance and reliability. Skilled in developing dynamic web applications with Django and Flask, I also specialize in crafting efficient RESTful APIs using FastAPI. Dedicated to continuous learning, I keep up with industry trends to deliver innovative, high-quality applications that fulfill diverse business needs.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
