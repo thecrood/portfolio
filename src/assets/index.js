@@ -39,8 +39,6 @@ import twodcar from './projects/2dcar.png';
 import twodshoot from './projects/2dshooting.png';
 import portfolio from './projects/portfolio.png';
 import ipl from './projects/ipl.png';
-import nyeusi from './projects/nyeusi.png';
-import space from './projects/space-hub.png';
 import database from './tech/database.png';
 import aws from './tech/aws.png';
 import ai from './tech/ai.png';
@@ -80,8 +78,6 @@ export {
   twodshoot,
   portfolio,
   ipl,
-  nyeusi,
-  space,
   intern,
   fullstack,
   develop,

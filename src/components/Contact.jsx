@@ -5,6 +5,7 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import { send, sendHover } from '../assets';
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const Contact = () => {
   const formRef = useRef();
@@ -117,7 +118,7 @@ const Contact = () => {
               border-none font-medium resize-none"
             />
           </label>
-
+          <div className="flex gap-4">
           <button
             type="submit"
             className="live-demo flex justify-center sm:gap-4 
@@ -143,6 +144,16 @@ const Contact = () => {
               w-[23px] h-[23px] object-contain"
             />
           </button>
+          <a href="https://wa.me/+918988449288/">
+            <button className="live-demo flex justify-center sm:gap-4 
+            gap-3 sm:text-[20px] text-[16px] text-timberWolf 
+            font-bold font-beckman items-center py-5
+            whitespace-nowrap sm:w-[130px] sm:h-[50px] 
+            w-[100px] h-[45px] rounded-[10px] bg-night 
+            hover:bg-battleGray hover:text-eerieBlack 
+            transition duration-[0.2s] ease-in-out">Text<IoLogoWhatsapp/></button>
+          </a>
+          </div>
         </form>
       </motion.div>
     </div>

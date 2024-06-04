@@ -16,8 +16,6 @@ import {
   twodshoot,
   portfolio,
   ipl,
-  nyeusi,
-  space,
   intern,
   fullstack,
   develop,
