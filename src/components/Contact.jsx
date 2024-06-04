@@ -144,14 +144,17 @@ const Contact = () => {
               w-[23px] h-[23px] object-contain"
             />
           </button>
-          <a href="https://wa.me/+918988449288/">
-            <button className="live-demo flex justify-center sm:gap-4 
+          <a
+            href="https://wa.me/+918988449288/"
+            className="live-demo flex justify-center sm:gap-4 
             gap-3 sm:text-[20px] text-[16px] text-timberWolf 
             font-bold font-beckman items-center py-5
             whitespace-nowrap sm:w-[130px] sm:h-[50px] 
             w-[100px] h-[45px] rounded-[10px] bg-night 
             hover:bg-battleGray hover:text-eerieBlack 
-            transition duration-[0.2s] ease-in-out">Text<IoLogoWhatsapp/></button>
+            transition duration-[0.2s] ease-in-out"
+          >
+            Text<IoLogoWhatsapp />
           </a>
           </div>
         </form>
