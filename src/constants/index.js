@@ -24,7 +24,8 @@ import {
   aws,
   ai,
   azure,
-  mongo
+  mongo,
+  prosper
 } from '../assets';
 
 export const navLinks = [
@@ -154,43 +155,32 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: '2D Car Game',
-    description: '2D Car Game Using Ursina Game Engine, Ursina is a Python Based Game Engine.',
+    name: 'ProsperWise',
+    description: `Stock Market Simulator`,
     tags: [
       {
         name: 'python',
         color: 'blue-text-gradient',
       },
       {
-        name: 'ursina',
+        name: 'Django',
         color: 'green-text-gradient',
       },
-    ],
-    image: twodcar,
-    repo: 'https://github.com/thecrood/2D-Car-Game-Using-Ursina-Game-Engine',
-    demo: '#',
-  },
-  {
-    id: 'project-2',
-    name: '2D shooting Game',
-    description:
-      '2D shooting Game Using Ursina Game Engine, Ursina is a Python Based Game Engine.',
-    tags: [
       {
-        name: 'python',
-        color: 'blue-text-gradient',
+        name: 'HTML5',
+        color: 'pink-text-gradient',
       },
       {
-        name: 'Ursina',
-        color: 'green-text-gradient',
-      },,
+        name: 'JavaScript',
+        color: 'pink-text-gradient',
+      },
     ],
-    image: twodshoot,
-    repo: 'https://github.com/thecrood/2D-shooting-Game-Using-Ursina-Game-Engine',
-    demo: '#',
+    image: prosper,
+    repo: 'https://github.com/thecrood/ProsperWise',
+    demo: 'https://youtu.be/nq9IH7uJVOE',
   },
   {
-    id: 'project-3',
+    id: 'project-4',
     name: 'portfolio',
     description: 'Portfolio Web App For Software Developer.',
     tags: [
@@ -213,10 +203,47 @@ const projects = [
     ],
     image: portfolio,
     repo: 'https://github.com/thecrood/portfolio',
+    demo: 'https://rohit-workfolio.netlify.app/',
+  },
+  {
+    id: 'project-2',
+    name: '2D Car Game',
+    description: '2D Car Game Using Ursina Game Engine, Ursina is a Python Based Game Engine.',
+    tags: [
+      {
+        name: 'python',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'ursina',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: twodcar,
+    repo: 'https://github.com/thecrood/2D-Car-Game-Using-Ursina-Game-Engine',
     demo: '#',
   },
   {
-    id: 'project-4',
+    id: 'project-3',
+    name: '2D shooting Game',
+    description:
+      '2D shooting Game Using Ursina Game Engine, Ursina is a Python Based Game Engine.',
+    tags: [
+      {
+        name: 'python',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Ursina',
+        color: 'green-text-gradient',
+      },,
+    ],
+    image: twodshoot,
+    repo: 'https://github.com/thecrood/2D-shooting-Game-Using-Ursina-Game-Engine',
+    demo: '#',
+  },
+  {
+    id: 'project-5',
     name: 'EDA of IPL Data',
     description: `Exploratory-Data-Analysis-of-IPL-Matches-9years`,
     tags: [
@@ -231,7 +258,8 @@ const projects = [
       {
         name: 'Pandas',
         color: 'pink-text-gradient',
-      },{
+      },
+      {
         name: 'Seaborn',
         color: 'pink-text-gradient',
       },

@@ -44,6 +44,7 @@ import aws from './tech/aws.png';
 import ai from './tech/ai.png';
 import azure from './tech/azure.png';
 import mongo from './tech/mongo.png';
+import prosper from './projects/prosper.png'
 
 export {
   bwmap,
@@ -86,5 +87,6 @@ export {
   aws,
   ai,
   azure,
-  mongo
+  mongo,
+  prosper
 };
