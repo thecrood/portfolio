@@ -1,4 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
+import { Toaster } from "react-hot-toast";
+
 import {
   About,
   Contact,
@@ -12,6 +14,15 @@ import {
 const App = () => {
   return (
     <BrowserRouter>
+      {/* Toaster must be here once at the root */}
+      <Toaster
+        position="top-right"
+        reverseOrder={false}
+        toastOptions={{
+          duration: 10000, // default duration for all toasts
+        }}
+      />
+      
       <div className="relative z-0">
         <div>
           <Navbar />

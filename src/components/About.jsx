@@ -35,11 +35,26 @@ const About = () => {
       </motion.div>
 
       <motion.p
-        variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
-        style={{ textAlign: 'justify' }}>
-        I am a proficient Software Engineer and Python Developer with expertise in Python, AWS, Azure, SQL, MongoDB Django, Flask, REST APIs, FastAPI, AI, Data Analytics, Deep Learning and Tkinter. I excel in creating scalable software solutions and robust data infrastructures, leveraging cloud platforms like AWS and Azure to boost application performance and reliability. Skilled in developing dynamic web applications with Django and Flask, I also specialize in crafting efficient RESTful APIs using FastAPI. Dedicated to continuous learning, I keep up with industry trends to deliver innovative, high-quality applications that fulfill diverse business needs.
-      </motion.p>
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
+          style={{ textAlign: "justify" }}
+        >
+          I am a versatile Software Engineer and Python Developer with 4 years of
+          experience in building high-performance APIs, automation workflows,
+          scalable backend services, and data-driven applications. I specialize in
+          Python frameworks such as FastAPI, Django, and Flask, and have strong
+          expertise in AWS, Azure, SQL, PostgreSQL, and MongoDB for developing
+          cloud-ready, reliable solutions. I also work extensively with Qlik Cloud,
+          Selenium, and automation scripts to create dynamic dashboards and
+          real-time reporting systems.
+          <br /><br />
+          My capabilities extend to Generative AI and Agentic AI, including LLM
+          integration (GPT, Claude, Gemini, Sonnet), multi-agent workflows, AI
+          agents, and prompt engineering—helping reduce development and operational
+          effort by up to 70%. Passionate about solving complex problems, I focus on
+          delivering innovative, efficient, and user-centric software solutions
+          across distributed and enterprise environments.
+        </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
