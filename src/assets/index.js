@@ -34,6 +34,7 @@ import intern from './company/intern.png';
 import fullstack from './company/fullstack.png';
 import develop from './company/develop.png';
 import soft from './company/soft.png';
+import aiexpert from './company/aiexpert.png'
 
 import twodcar from './projects/2dcar.png';
 import twodshoot from './projects/2dshooting.png';
@@ -88,5 +89,6 @@ export {
   ai,
   azure,
   mongo,
-  prosper
+  prosper,
+  aiexpert
 };

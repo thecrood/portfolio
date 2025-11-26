@@ -25,7 +25,8 @@ import {
   ai,
   azure,
   mongo,
-  prosper
+  prosper,
+  aiexpert
 } from '../assets';
 
 export const navLinks = [
@@ -45,26 +46,26 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Frontend Developer',
-    icon: frontend,
-  },
-  {
     title: 'Backend Developer',
     icon: backend,
   },
   {
-    title: 'Artificial Intelligence',
+    title: 'Generative AI/ Agnetic AI',
     icon: af,
   },
   {
     title: 'Software Prototyping',
     icon: prototyping,
   },
+  {
+    title: 'Frontend Developer',
+    icon: frontend,
+  }
 ];
 
 const technologies = [
   {
-    name: 'Artificial intelligence',
+    name: 'Generative AI/ Agentic AI',
     icon: ai,
   },
   {
@@ -130,25 +131,25 @@ const experiences = [
     date: 'Jan 2019 - Dec 2019',
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Webner Solutions',
-    icon: soft,
-    iconBg: '#333333',
-    date: 'Jan 2022 - Feb 2023',
-  },
-  {
     title: 'Software Engineer',
-    company_name: 'Webner Solutions',
+    company_name: 'Webner Solutions Limited',
     icon: develop,
     iconBg: '#333333',
-    date: 'FEB 2023 - Nov 2023',
+    date: 'Jan 2022 - Nov 2023',
   },
   {
     title: 'Full Stack Developer',
-    company_name: 'Webner Solutions',
+    company_name: 'Webner Solutions Limited',
     icon: fullstack,
     iconBg: '#333333',
-    date: 'Nov 2023 - Present',
+    date: 'Nov 2023 - Jan 2025',
+  },
+  {
+    title: 'Lead Software Engineer',
+    company_name: 'Persistent Systems Limited',
+    icon: aiexpert,
+    iconBg: '#333333',
+    date: 'Feb 2025 - Present',
   },
 ];
 

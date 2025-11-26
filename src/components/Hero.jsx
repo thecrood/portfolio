@@ -5,7 +5,7 @@ import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { bwmap, worldmap } from '../assets';
 
-const values = ['Software Engineer', 'Python Developer', 'Data Engineer'];
+const values = ['Agentic AI Expert','Software Engineer', 'Python Developer', 'Data Engineer'];
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

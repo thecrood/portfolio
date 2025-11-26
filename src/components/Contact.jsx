@@ -6,6 +6,7 @@ import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import { send, sendHover } from '../assets';
 import { IoLogoWhatsapp } from "react-icons/io";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const formRef = useRef();
@@ -42,22 +43,42 @@ const Contact = () => {
         'GuuMuL_l4v9_j6Vt4' //paste your Public Key here. You'll get it in your profile section.
       )
       .then(
-        () => {
-          setLoading(false);
-          alert('Thank you. I will get back to you as soon as possible.');
+          () => {
+            setLoading(false);
 
-          setForm({
-            name: '',
-            email: '',
-            message: '',
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.log(error);
-          alert('Something went wrong. Please try again.');
-        }
-      );
+            toast.success("Thank you! I will get back to you as soon as possible.", {
+              duration: 10000, // 10 seconds
+              style: {
+                background: "#4BB543",
+                color: "#fff",
+                padding: "12px 18px",
+                fontSize: "15px",
+                borderRadius: "10px",
+              },
+            });
+
+            setForm({
+              name: '',
+              email: '',
+              message: '',
+            });
+          },
+          (error) => {
+            setLoading(false);
+            console.log(error);
+
+            toast.error("Something went wrong. Please try again.", {
+              duration: 10000,
+              style: {
+                background: "#ff4d4d",
+                color: "#fff",
+                padding: "12px 18px",
+                fontSize: "15px",
+                borderRadius: "10px",
+              },
+            });
+          }
+        );
   };
 
   return (
