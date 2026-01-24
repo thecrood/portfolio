@@ -6,6 +6,7 @@ import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import { send, sendHover } from '../assets';
 import { IoLogoWhatsapp } from "react-icons/io";
+import { IoLogoLinkedin, IoLogoInstagram } from "react-icons/io5";
 import toast from "react-hot-toast";
 
 const Contact = () => {
@@ -143,12 +144,10 @@ const Contact = () => {
           <button
             type="submit"
             className="live-demo flex justify-center sm:gap-4 
-            gap-3 sm:text-[20px] text-[16px] text-timberWolf 
-            font-bold font-beckman items-center py-5
+            gap-3 sm:text-[20px] text-[16px] items-center py-5
             whitespace-nowrap sm:w-[130px] sm:h-[50px] 
             w-[100px] h-[45px] rounded-[10px] bg-night 
-            hover:bg-battleGray hover:text-eerieBlack 
-            transition duration-[0.2s] ease-in-out"
+            hover:bg-battleGray transition duration-[0.2s] ease-in-out"
             onMouseOver={() => {
               document
                 .querySelector('.contact-btn')
@@ -156,8 +155,8 @@ const Contact = () => {
             }}
             onMouseOut={() => {
               document.querySelector('.contact-btn').setAttribute('src', send);
-            }}>
-            {loading ? 'Sending' : 'Send'}
+            }}
+            title="Send Message">
             <img
               src={send}
               alt="send"
@@ -167,15 +166,40 @@ const Contact = () => {
           </button>
           <a
             href="https://wa.me/+918988449288/"
-            className="live-demo flex justify-center sm:gap-4 
-            gap-3 sm:text-[20px] text-[16px] text-timberWolf 
-            font-bold font-beckman items-center py-5
+            className="live-demo flex justify-center items-center py-5
             whitespace-nowrap sm:w-[130px] sm:h-[50px] 
             w-[100px] h-[45px] rounded-[10px] bg-night 
-            hover:bg-battleGray hover:text-eerieBlack 
-            transition duration-[0.2s] ease-in-out"
+            hover:opacity-80 transition duration-[0.2s] ease-in-out"
+            style={{ color: '#25d366' }}
+            title="WhatsApp"
           >
-            Text<IoLogoWhatsapp />
+            <IoLogoWhatsapp size={24} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rohit-chaudhary-038171158"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="live-demo flex justify-center sm:gap-4 
+            gap-3 sm:text-[20px] text-[16px] font-bold font-beckman items-center py-5
+            whitespace-nowrap sm:w-[130px] sm:h-[50px] 
+            w-[100px] h-[45px] rounded-[10px] bg-night 
+            hover:bg-battleGray transition duration-[0.2s] ease-in-out"
+            style={{ color: '#0a66c2' }}
+          >
+            <IoLogoLinkedin size={24} />
+          </a>
+          <a
+            href="https://www.instagram.com/who.nvi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="live-demo flex justify-center sm:gap-4 
+            gap-3 sm:text-[20px] text-[16px] font-bold font-beckman items-center py-5
+            whitespace-nowrap sm:w-[130px] sm:h-[50px] 
+            w-[100px] h-[45px] rounded-[10px] bg-night 
+            hover:bg-battleGray transition duration-[0.2s] ease-in-out"
+            style={{ color: '#e4405f' }}
+          >
+            <IoLogoInstagram size={24} />
           </a>
           </div>
         </form>

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { close, menu, logotext } from '../assets';
+import { IoLogoGithub } from 'react-icons/io5';
+import { MdEmail } from 'react-icons/md';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -44,12 +46,33 @@ const Navbar = () => {
               className={`${
                 active === nav.title ? 'text-french' : 'text-eerieBlack'
               } hover:text-taupe text-[21px] font-medium font-mova 
-                uppercase tracking-[3px] cursor-pointer nav-links`}
+                uppercase tracking-[3px] cursor-pointer nav-links ${
+                nav.title === 'contact' ? 'text-[26px]' : ''
+              }`}
               onClick={() => setActive(nav.title)}>
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              {nav.title === 'contact' ? (
+                <a href={`#${nav.id}`} title="Contact">
+                  <MdEmail className="hover:text-taupe" />
+                </a>
+              ) : (
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              )}
             </li>
           ))}
         </ul>
+
+        {/* Social Media Links - GitHub on Right */}
+        <div className="hidden sm:flex flex-row gap-6 items-center">
+          <a
+            href="https://github.com/thecrood"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[26px] hover:opacity-80 transition"
+            style={{ color: '#10b981' }}
+            title="GitHub">
+            <IoLogoGithub />
+          </a>
+        </div>
 
         {/* mobile */}
         <div className="sm:hidden flex flex-1 w-screen justify-end items-center">
