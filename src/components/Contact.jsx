@@ -169,7 +169,7 @@ const Contact = () => {
             className="live-demo flex justify-center items-center py-5
             whitespace-nowrap sm:w-[130px] sm:h-[50px] 
             w-[100px] h-[45px] rounded-[10px] bg-night 
-            hover:opacity-80 transition duration-[0.2s] ease-in-out"
+            hover:bg-battleGray transition duration-[0.2s] ease-in-out"
             style={{ color: '#25d366' }}
             title="WhatsApp"
           >
